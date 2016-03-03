@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TheMingo</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="about_title">About Us</string>
+    <string name="about">Mingo is an event where people meet every last sunday of the month,to enjoy food and drink while socializing, listening to neo and afro-soul music from different artists</string>
+    <string name="contact_title">Contact Us</string>
+    <string name="contact">info@themingo.com</string>
+    <string name="contact_content">+254070011256458</string>
+
+</resources>
