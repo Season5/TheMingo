@@ -7,5 +7,8 @@
     <string name="contact_title">Contact Us</string>
     <string name="contact">info@themingo.com</string>
     <string name="contact_content">+254070011256458</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_schedule">ScheduleActivity</string>
+    <string name="title_activity_gallery">Gallery</string>
 
 </resources>

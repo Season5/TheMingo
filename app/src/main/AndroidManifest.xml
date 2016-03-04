@@ -19,8 +19,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Schedule"
-            android:label="@string/title_activity_main2"
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.mue.themingo.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ScheduleActivity"
+            android:label="@string/title_activity_schedule"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.mue.themingo.MainActivity" />
+        </activity>
+        <activity
+            android:name=".GalleryActivity"
+            android:label="@string/title_activity_gallery"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data

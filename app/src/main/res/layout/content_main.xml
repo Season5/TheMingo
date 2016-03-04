@@ -13,46 +13,42 @@
     tools:context="com.app.mue.themingo.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <ImageView
-        android:layout_width="170dp"
-        android:layout_height="300dp"
-        android:id="@+id/imageView"
-        android:background="#fff"
-        android:layout_toLeftOf="@+id/imageView3"
+    <ImageButton
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        android:id="@+id/imageButton"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:id="@+id/imageView2"
-        android:layout_below="@+id/imageView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="5dp"
-        android:background="#2979ff"
-        android:layout_toLeftOf="@+id/imageView3"
-        android:layout_toStartOf="@+id/imageView3" />
+        android:background="#0b0b0c" />
 
-    <ImageView
-        android:layout_width="170dp"
-        android:layout_height="200dp"
-        android:id="@+id/imageView3"
+    <ImageButton
+        android:layout_width="175dp"
+        android:layout_height="125dp"
+        android:id="@+id/schedule"
         android:layout_alignParentTop="true"
-        android:background="#bdfb04"
-        android:layout_above="@+id/imageView4"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_toRightOf="@+id/imageButton"
+        android:layout_toEndOf="@+id/imageButton"
+        android:background="#5A4A42"
+        android:onClick="onClick"/>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="270dp"
-        android:id="@+id/imageView4"
-        android:background="#fb1c1c"
-        android:layout_alignBottom="@+id/imageView2"
-        android:layout_marginTop="5dp"
-        android:layout_toRightOf="@+id/imageView2"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+    <ImageButton
+        android:layout_width="175dp"
+        android:layout_height="325dp"
+        android:id="@+id/gallary"
+        android:layout_below="@+id/schedule"
+        android:layout_alignLeft="@+id/schedule"
+        android:layout_alignStart="@+id/schedule"
+        android:background="#B2D234"
+        android:onClick="onClick"/>
+
+    <ImageButton
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:id="@+id/about"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#056839"
+        android:onClick="onClick"/>
 </RelativeLayout>
