@@ -11,4 +11,14 @@
     <string name="title_activity_schedule">ScheduleActivity</string>
     <string name="title_activity_gallery">Gallery</string>
 
+
+    <string name="Schedule">10am - 12pm: guest arrive at will </string>
+    <string name="Schedule1">12 - 1pm: the event starts </string>
+    <string name="Schedule2">1pm - 3 pm: various artists performs </string>
+    <string name="Schedule3">3pm - 4pm: food and eating at will </string>
+    <string name="Schedule4">4pm - 4:30pm: comments </string>
+    <string name="Schedule5">4:35pm - 5pm: settle and mingo </string>
+    <string name="Schedule6">5pm -7pm: Have fun an d artist release there albums </string>
+    <string name="Schedule7">7pm - 9pm: Drinks and noise making as people leave at will </string>
+
 </resources>
