@@ -1,34 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.app.mue.themingo.GalleryActivity">
-
-    <android.support.design.widget.AppBarLayout
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <TableRow>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:padding="5dp"
+                android:layout_height="150dp"
+                android:src="@drawable/bla" />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:padding="5dp"
+                android:src="@drawable/twerk"/>
+        </TableRow>
+
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_height="match_parent">
 
-    </android.support.design.widget.AppBarLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="People chilling"
+                android:textAlignment="center"
+                android:id="@+id/textView12"
+                android:layout_column="0" />
 
-    <include layout="@layout/content_gallery" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Twerk it baby"
+                android:textAlignment="center"
+                android:id="@+id/textView13"
+                android:layout_column="1" />
+        </TableRow>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email" />
+        <TableRow>
 
-</android.support.design.widget.CoordinatorLayout>
+            <ImageView
+                android:layout_width="200dp"
+                android:padding="5dp"
+                android:layout_height="120dp"
+                android:src="@drawable/blankts" />
+            <ImageView
+                android:layout_width="200dp"
+                android:padding="5dp"
+                android:layout_height="120dp"
+                android:src="@drawable/smile"/>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="All races are welcome"
+                android:textAlignment="center"
+                android:id="@+id/textView14"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Smile for the world"
+                android:textAlignment="center"
+                android:id="@+id/textView15"
+                android:layout_column="1" />
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/smile"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="275dp"
+            android:src="@drawable/wine" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Great perfomances"
+            android:textAlignment="center"
+            android:id="@+id/textView16"
+            android:layout_column="1"/>
+
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:padding="5dp"
+                android:layout_height="120dp"
+                android:src="@drawable/bla1"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:padding="5dp"
+                android:layout_height="120dp"
+                android:src="@drawable/sheesha"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Selfie moment"
+                android:textAlignment="center"
+                android:id="@+id/textView17"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Sheesha in plenty"
+                android:textAlignment="center"
+                android:id="@+id/textView18"
+                android:layout_column="1" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>
