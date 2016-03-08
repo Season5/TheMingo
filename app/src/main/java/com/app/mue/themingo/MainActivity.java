@@ -41,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.gallary:
                 Intent intent3 = new Intent(this, GalleryActivity.class);
                 startActivity(intent3);
+                break;
+            default:
+                break;
         }
     }
     @Override
