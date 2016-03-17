@@ -12,7 +12,9 @@ public class ScheduleActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.schedule);
+        setContentView(R.layout.content_schedule);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         AnimatedListView animatedListView = (AnimatedListView) findViewById(R.id.my_list);
 
