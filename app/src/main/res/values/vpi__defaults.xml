@@ -15,9 +15,9 @@
 
 <resources>
     <bool name="default_circle_indicator_centered">true</bool>
-    <color name="default_circle_indicator_fill_color">@color/purple</color>
+    <color name="default_circle_indicator_fill_color">@color/colorAccent</color>
     <!--change fill color-->
-    <color name="default_circle_indicator_page_color">@color/trans_black_25</color>
+    <color name="default_circle_indicator_page_color">@color/colorPrimary</color>
     <!--change indicator un selected fill color-->
     <integer name="default_circle_indicator_orientation">0</integer>
     <dimen name="default_circle_indicator_radius">4dp</dimen>
