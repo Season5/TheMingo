@@ -15,6 +15,7 @@ import com.app.mue.themingo.listeners.OnGridItemSelectedListener;
 
 public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
+
     private static final int TYPER_PAGER = 0;
     private static final int TYPE_ITEM = 1;
 
@@ -40,17 +41,39 @@ public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         if(viewType == TYPER_PAGER) {
             View v = LayoutInflater.from(parent.getContext()).inflate (R.layout.include_view_pager, parent, false);
             return new HeaderViewHolder (v);
-            
+
         } else if(viewType == TYPE_ITEM) {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_home, null);
-            return new HeaderViewHolder.RecyclerViewHolder(view);
+            return new RecyclerViewHolder(view);
         }
 
 
         return null;
     }
 
+    @Override
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
 
+        if(holder instanceof HeaderViewHolder) {
+            HeaderViewHolder headerHolder = (HeaderViewHolder) holder;
+
+            ViewPagerAdapter pagerAdapter = new ViewPagerAdapter(mContext, mImageResID);
+            headerHolder.viewPager.setAdapter(pagerAdapter);
+            headerHolder.mIndicator.setViewPager(headerHolder.viewPager);
+
+
+
+
+        } else if(holder instanceof RecyclerViewHolder) {
+            RecyclerViewHolder genericViewHolder = (RecyclerViewHolder) holder;
+
+            Drawable icon = mContext.getResources().obtainTypedArray(mImageResID).getDrawable(position - HEADER_PAGER_LAYOUT);
+
+            genericViewHolder.image.setImageDrawable(icon);
+
+        }
+
+    }
 
     @Override
     public int getItemViewType (int position) {
@@ -74,11 +97,13 @@ public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     public class HeaderViewHolder extends RecyclerView.ViewHolder {
         ViewPager viewPager;
+        CirclePageIndicator mIndicator;
 
         public HeaderViewHolder (View itemView) {
             super (itemView);
             this.viewPager = (ViewPager) itemView.findViewById(R.id.pager);
-
+            this.mIndicator  = (CirclePageIndicator) itemView.findViewById(R.id.indicator);
+        }
     }
 
     public class RecyclerViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
