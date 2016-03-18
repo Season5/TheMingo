@@ -11,6 +11,7 @@ import android.widget.ImageView;
 
 import com.app.mue.themingo.R;
 import com.app.mue.themingo.listeners.OnGridItemSelectedListener;
+import com.app.mue.themingo.views.CirclePageIndicator;
 
 
 public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
