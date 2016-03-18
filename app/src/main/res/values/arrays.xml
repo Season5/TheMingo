@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <array name="icons">
+        <item>@drawable/mingo</item>
+        <item>@drawable/bla</item>
+        <item>@drawable/smile</item>
+        <item>@drawable/sheesha</item>
+        <!--<item>@drawable/bla1</item>-->
+        <!--<item>@drawable/blankts</item>-->
+        <!--<item>@drawable/twerk</item>-->
+        <!--<item>@drawable/jellybean</item>-->
+        <!--<item>@drawable/kitkat</item>-->
+        <!--<item>@drawable/lollipop</item>-->
+        <!--<item>@drawable/marshmallow</item>-->
+    </array>
+
+</resources>
