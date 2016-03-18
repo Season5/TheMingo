@@ -9,7 +9,7 @@
         android:layout_height="fill_parent"
         android:background="@null" />
 
-    <com.takeoffandroid.materialpagerrecyclergridview.views.CirclePageIndicator
+    <com.app.mue.themingo.views.CirclePageIndicator
         android:id="@+id/indicator"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
