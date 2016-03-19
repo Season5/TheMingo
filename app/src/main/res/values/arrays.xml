@@ -7,13 +7,14 @@
         <item>@drawable/bla</item>
         <item>@drawable/smile</item>
         <item>@drawable/sheesha</item>
-        <!--<item>@drawable/bla1</item>-->
-        <!--<item>@drawable/blankts</item>-->
-        <!--<item>@drawable/twerk</item>-->
-        <!--<item>@drawable/jellybean</item>-->
-        <!--<item>@drawable/kitkat</item>-->
-        <!--<item>@drawable/lollipop</item>-->
-        <!--<item>@drawable/marshmallow</item>-->
+        <item>@drawable/bla1</item>
+        <item>@drawable/blankts</item>
+        <item>@drawable/twerk</item>
+        <item>@drawable/moro</item>
+        <item>@drawable/wine</item>
+        <item>@drawable/bla1</item>
+        <item>@drawable/moro</item>
+        <item>@drawable/moro</item>
     </array>
 
 </resources>
